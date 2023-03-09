@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.json": "jsonc",
+        "P20_2-3.C": "cpp"
+    }
+}
