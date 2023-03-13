@@ -21,10 +21,12 @@ int main()
 void StringCount(char s[])
 {
     int letter = 0, blank = 0, digit = 0, other = 0;
-    for (int i = 0; i < sizeof(s); i++)
+    for (int i = 0; i < MAXS; i++)
     {
         char item = s[i];
-        if (item == ' ' || item == '\n')
+        if (item == '\0')//字符串结束
+            break;
+        else if (item == ' ' || item == '\n')
             blank++;
         else if (item >= '0' && item <= '9')
             digit++;
