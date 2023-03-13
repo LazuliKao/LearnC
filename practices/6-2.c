@@ -18,7 +18,7 @@ int main()
 int fn(int a, int n)
 {
     int result = a;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         result *= 10;
         result += a;
@@ -30,5 +30,5 @@ int SumA(int a, int n)
     if (n == 1)
         return a;
     else
-        return fn(a, n) * SumA(a, n - 1);
+        return fn(a, n) + SumA(a, n - 1);
 }
