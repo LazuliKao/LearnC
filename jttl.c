@@ -8,11 +8,11 @@ int main()
     {
         int rabbits = (feet - 2 * heads) / 2;
         int chickens = heads - rabbits;
-        printf("chickens = %d; rabbits = %d\n", chickens, rabbits);
+        printf("%d %d", chickens, rabbits);
     }
     else
     {
-        printf("No solution!\n");
+        printf("No solution!");
     }
     return 0;
 }
