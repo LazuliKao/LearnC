@@ -20,8 +20,7 @@ int fn(int a, int n)
     int result = a;
     for (int i = 0; i < n - 1; i++)
     {
-        result *= 10;
-        result += a;
+        result = result * 10 + a;
     }
     return result;
 }
