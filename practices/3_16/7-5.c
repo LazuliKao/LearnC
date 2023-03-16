@@ -32,8 +32,8 @@ int main()
     }
     else if (delta < 0)
     {
-        double p1 = -b / 2 * a;
-        double p2 = fabs(sqrt(-delta));
+        double p1 = (-b) / 2 * a;
+        double p2 = fabs(sqrt(-delta) / (2 * a));
         printf("x1=%.2lf+%.2lfi,x2=%.2lf-%.2lfi", p1, p2, p1, p2);
     }
     else
