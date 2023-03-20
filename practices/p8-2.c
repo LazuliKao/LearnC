@@ -22,3 +22,14 @@ int main()
 }
 
 /* 你的代码将被嵌在这里 */
+int search(int list[], int n, int x)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (list[i] == x)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
