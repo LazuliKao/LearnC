@@ -3,6 +3,9 @@
     "*.json": "jsonc",
     "math.h": "c",
     "corecrt_math_defines.h": "c",
-    "corecrt_math.h": "c"
+    "corecrt_math.h": "c",
+    "iterator": "c",
+    "xmemory": "c",
+    "xutility": "c"
   }
 }
