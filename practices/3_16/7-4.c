@@ -24,8 +24,6 @@ int main()
 {
     int count;
     scanf("%d", &count);
-    double s[10];
-
     float max = 0;
     float min = 100;
     float sum = 0;
