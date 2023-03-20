@@ -57,17 +57,18 @@ void CountOff(int n, int m, int out[])
     int temp[MAXN]; // 队伍
     for (int i = 0; i < n; i++)
     {
-        temp[i] = i + 1;
+        temp[i] = i;
     }
     int current = 0;
     for (int i = 0; i < n; i++)
     {
-        int remain = n - i;
-        current = (current + m) % remain;
-        out[temp[current]] = 1;
-        for (int i = current; i < remain; i++)
-        {
-            temp[current] = temp[current + 1];
-        }
+        out[i] = 1;
+        // int remain = n - i;
+        // current = (current + m) % remain;
+        // out[current - 1] = temp[current - 1];
+        // for (int j = current - 1; j < remain; j++)
+        // {
+        //     temp[current] = temp[current + 1];
+        // }
     }
 }
