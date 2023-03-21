@@ -35,7 +35,7 @@ int narcissistic(int number)
 }
 void PrintN(int m, int n)
 {
-    for (int i = m; i <= n; i++)
+    for (int i = m + 1; i < n; i++)
         if (narcissistic(i) == 0)
             printf("%d\n", i);
 }
