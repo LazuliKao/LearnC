@@ -33,4 +33,21 @@ int main()
 /* 你的代码将被嵌在这里 */
 int set_grade(struct student *p, int n)
 {
+    int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        struct student *item = &p[i];
+        if (item->score >= 85)
+            item->grade = 'A';
+        else if (item->score >= 70)
+            item->grade = 'B';
+        else if (item->score >= 60)
+            item->grade = 'C';
+        else
+        {
+            item->grade = 'D';
+            count++;
+        }
+    }
+    return count;
 }

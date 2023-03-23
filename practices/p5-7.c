@@ -50,7 +50,7 @@ int main()
 // }
 // 精度高，不可直接计算阶乘
 double funcos(double e, double x)
-{
+{ // 简略版
     double result = 0, temp = 0, x_pow = 1, factorial = 1;
     int i = 0;
     char sign = -1;
@@ -66,7 +66,7 @@ double funcos(double e, double x)
 // //精度高，不可直接计算阶乘
 // //Time Limit Exceeded 0
 
-// int factorial(int v)//计算阶乘
+// double factorial(int v)//计算阶乘
 // {
 //     int result = 1;
 //     for (int i = 1; i <= v; i++)
