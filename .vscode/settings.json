@@ -7,5 +7,6 @@
     "iterator": "c",
     "xmemory": "c",
     "xutility": "c"
-  }
+  },
+  "cmake.configureOnOpen": true
 }
