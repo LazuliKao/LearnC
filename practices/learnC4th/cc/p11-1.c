@@ -20,7 +20,6 @@ int main()
 /* 你的代码将被嵌在这里 */
 char *getmonth(int n)
 {
-
     char *month[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     if (n < 1 || n > 12)
         return NULL;
