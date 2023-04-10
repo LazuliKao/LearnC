@@ -26,11 +26,7 @@ void sub(int n)
 void dectobin(int n)
 {
     if (n == 0)
-    {
         printf("0");
-    }
     else
-    {
         sub(n);
-    }
 }
