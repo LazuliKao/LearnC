@@ -90,9 +90,7 @@ char *match(char *s, char ch1, char ch2)
             {
                 printf("%c", s[j]);
                 if (ch2 == s[j])
-                {
                     break;
-                }
             }
             printf("\n");
             return s + i;
