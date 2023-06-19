@@ -9,7 +9,6 @@ int main(int argc, char const *argv[])
             a[j] += 32;
         printf("%c", a[j]);
     }
-
     // char *cur = str;
     // do
     // {
