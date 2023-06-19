@@ -11,16 +11,11 @@ int main(int argc, char const *argv[])
     int c = 0;
     do
     {
-        if (!started)
-        {
-            if (*str == '-')
-            {
-                sign = -1;
-                started = 1;
-            }
-        }
+        if (!started && *str == '-')
+            sign = -1;
         if (*str >= '0' && *str <= '9' || *str >= 'a' && *str <= 'f' || *str >= 'A' && *str <= 'F')
         {
+            started = 1;
             bytes[c++] = *str;
         }
     } while (*(++str) != '#');
@@ -38,4 +33,41 @@ int main(int argc, char const *argv[])
     }
     printf("%d", num * sign);
     return 0;
+
+    // char a;
+    // int flag = 1, mark = 0, sum = 0;
+    // // flag来表示有没有读到第一个字符，mark来表示第一个字符是不是'-'
+    // scanf("%c", &a);
+    // while (a != '#')
+    // {
+    //     if (a >= '0' && a <= '9')
+    //     {
+    //         flag = 0;
+    //         sum = sum * 16 + a - '0';
+    //     }
+    //     else if (a >= 'a' && a <= 'f')
+    //     {
+    //         flag = 0;
+    //         sum = sum * 16 + a - 'a' + 10;
+    //     }
+    //     else if (a >= 'A' && a <= 'F')
+    //     {
+    //         flag = 0;
+    //         sum = sum * 16 + a - 'A' + 10;
+    //     }
+    //     else if (a == '-' && flag == 1)
+    //         mark = 1;
+    //     scanf("%c", &a);
+    // }
+
+    // if (sum == 0)
+    //     printf("0");
+    // else
+    // {
+    //     if (mark == 1)
+    //         printf("-");
+    //     printf("%d\n", sum);
+    // }
+
+    // return 0;
 }
